@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="with=device-width,initial-scale=1.0">
+    <title>Hue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/e38f566fd5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logobgr.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--<i class="fa-regular fa-circle-left" onclick="hideMenu()"></i>--->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="certificates.html">CERTIFICATES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>WHERE TO FIND ME?</h1>
+    </section>
+
+    <!----CONTACT me----->
+    <section class="blog">
+        <div class="row">
+
+            <div class="contact-col">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <h2><br>LINKEDIN</h2>
+                <a href="https://www.linkedin.com/in/hubert-veyannie-1b850b241/">
+                    <p>Hubert-veyannie</p>
+                </a>
+            </div>
+
+            <div class="contact-col">
+                <i class="fa-brands fa-github fa-2x"></i>
+                <h2><br>GITHUB</h2>
+                <a href="https://github.com/Hubert-3105">
+                    <p>Hubert-3105</p>
+                </a>
+            </div>
+
+            <div class="contact-col">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <h2><br>EMAIL</h2>
+                <p>hubert.v2020ece@sece.ac.in</p>
+            </div>
+
+            <div class="contact-col">
+                <i class="fa-solid fa-location-arrow fa-2x"></i>
+                <h2><br>LOCATION</h2>
+                <p>Coimbatore</p>
+            </div>
+
+        </div>
+    </section>
+    <!-------Javascript for toggle menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0 ";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
